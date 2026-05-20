@@ -17,9 +17,9 @@
   .hero-cta { display: flex; gap: 16px; align-items: center; }
   .btn-secondary { color: var(--blue-accent); font-size: 14px; font-weight: 600; letter-spacing: 1px; text-decoration: none; border-bottom: 1px solid var(--blue-accent); padding-bottom: 2px; }
   .hero-visual { display: flex; flex-direction: column; align-items: center; gap: 32px; position: relative; z-index: 1; }
-  .umbrella-wrap { width: 260px; height: 320px; background: linear-gradient(180deg, #1a3a5c 0%, #0a1628 100%); border-radius: 50% 50% 20px 20px / 60% 60% 20px 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(41,182,246,0.15); position: relative; }
-  .umbrella-wrap .u-emoji { font-size: 110px; position: relative; z-index: 1; }
-  .umbrella-label { position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%); background: var(--blue-accent); color: var(--dark); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 16px; border-radius: 20px; white-space: nowrap; }
+  .umbrella-wrap { width: 300px; height: 340px; background: linear-gradient(180deg, #1a3a5c 0%, #0a1628 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(41,182,246,0.15); position: relative; overflow: hidden; }
+  .umbrella-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 16px; position: relative; z-index: 1; }
+  .umbrella-label { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); background: var(--blue-accent); color: var(--dark); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 16px; border-radius: 20px; white-space: nowrap; z-index: 2; }
   .hero-badges { display: flex; gap: 24px; }
   .hero-badge { text-align: center; color: #b0c4d8; }
   .hero-badge .icon { font-size: 28px; display: block; margin-bottom: 6px; color: var(--blue-accent); }
@@ -103,7 +103,7 @@
   </div>
   <div class="hero-visual">
     <div class="umbrella-wrap">
-      <span class="u-emoji">☂</span>
+      <img src="parapluie_noir.jpeg" alt="DryDrop Noir Minuit">
       <div class="umbrella-label">Filtration 3 étapes</div>
     </div>
     <div class="hero-badges">
@@ -167,7 +167,7 @@
 
 <!-- CTA -->
 <section class="cta-section">
-  <div class="cta-price">399,00 MAD</div>
+  <div class="cta-price">À partir de 250,00 MAD</div>
   <div class="cta-price-sub">TVA incluse · Livraison offerte au Maroc</div>
   <h2>Prêt à rejoindre la <span>révolution</span> ?</h2>
   <p>Commandez votre DryDrop aujourd'hui et transformez chaque pluie en opportunité.</p>
