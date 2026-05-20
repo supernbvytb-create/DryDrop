@@ -2,12 +2,13 @@ var cart = JSON.parse(localStorage.getItem('drydrop_cart') || '[]');
 
 function saveCart() { localStorage.setItem('drydrop_cart', JSON.stringify(cart)); }
 
-function addToCart(name, color, colorHex, qty) {
+function addToCart(name, color, colorHex, qty, price) {
   qty = qty || 1;
+  price = price || 400;
   var id = 'drydrop-' + color;
   var existing = cart.find(function(i){ return i.id === id; });
   if (existing) existing.qty += qty;
-  else cart.push({ id: id, name: name, color: color, colorHex: colorHex, price: 399, qty: qty, icon: '☂' });
+  else cart.push({ id: id, name: name, color: color, colorHex: colorHex, price: price, qty: qty, icon: '☂' });
   saveCart();
   updateCartUI();
   showToast('✅ ' + qty + ' × DryDrop ' + color + ' ajouté !');
