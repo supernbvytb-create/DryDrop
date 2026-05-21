@@ -71,6 +71,29 @@
   .cta-price-sub { font-size: 13px; color: #7a9ab8; margin-bottom: 32px; }
   .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
   .btn-large { padding: 18px 48px; font-size: 16px; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; padding: 40px 20px 32px; gap: 36px; min-height: auto; text-align: center; }
+    .hero-text h1 { font-size: 52px; }
+    .hero-text p { font-size: 14px; max-width: 100%; }
+    .hero-cta { justify-content: center; flex-wrap: wrap; }
+    .hero-visual { align-items: center; }
+    .umbrella-wrap { width: 200px; height: 240px; }
+    .hero-badges { gap: 16px; }
+    .features-strip { grid-template-columns: 1fr 1fr; }
+    .feature-item { padding: 16px; border-right: none; border-bottom: 1px solid var(--border); }
+    .feature-item:nth-child(odd) { border-right: 1px solid var(--border); }
+    .steps { grid-template-columns: 1fr; }
+    .steps::before { display: none; }
+    .eco-banner { flex-direction: column; padding: 28px 20px; margin: 0 16px 40px; text-align: center; }
+    .eco-grid { grid-template-columns: 1fr 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .cta-section { padding: 48px 20px; }
+    .cta-section h2 { font-size: 36px; }
+    .cta-price { font-size: 36px; }
+    .cta-actions { flex-direction: column; align-items: center; }
+    .btn-large { width: 100%; justify-content: center; padding: 16px 24px; }
+  }
 </style>
 </head>
 <body>

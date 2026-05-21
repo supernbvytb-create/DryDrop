@@ -47,6 +47,16 @@
   .comment-box { padding:16px; border-radius:0 8px 8px 0; font-size:13px; line-height:1.7; }
   .tag { display:inline-block; background:#f0f4f8; border:1px solid var(--border); border-radius:20px; padding:5px 14px; font-size:13px; color:#333; }
   .tags { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+  @media (max-width:768px) {
+    .kpi-grid { grid-template-columns:1fr 1fr; gap:12px; }
+    .kpi-val { font-size:28px; }
+    .mkt-grid { grid-template-columns:1fr 1fr; gap:12px; }
+    .prod-grid { grid-template-columns:1fr 1fr; gap:12px; }
+    .two-col { grid-template-columns:1fr; }
+    .comments-grid { grid-template-columns:1fr; }
+    table { font-size:12px; }
+    thead th, tbody td, tfoot td { padding:8px 6px; }
+  }
 </style>
 </head>
 <body>
